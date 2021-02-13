@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ファッション通販サイト</title>
+    <link rel="stylesheet" href="yo-n4style-slideshow.css">
+</head>
+
+<body>
+    <div id="hometag">
+    <a href="yo-n4.html"><img src="brandtag.jpg" alt="" width="227px" height="109px"></a>
+    </div>
+    <div id="nav">
+        <a href="login.html"><img src="login.png" alt="" width="65px" height="30px"></a>
+    </div>
+    <div id="hr"></div>
+    <div id="nav1">
+        <div id="newitem">
+            <ul>
+                <li><a href="yo-n4.html">home</a></li>
+                <li><a href="yo-n4.html">All Item</a></li>
+                <li><a href="yo-n4.html">Blog</a></li>
+                <li><a href="yo-n4.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="hr"></div>
+    </div>
+    
+ <div id="picup">
+     <p class="midasi1">pic UP!!</p>
+    <div id="hr"></div>
+     </div>
+
+    <div id="mainpicture">
+    <img id="mypic" src="unnamed6-1.jpg" width="500" height="305">
+    <script>
+            var pics_src = new Array("unnamed6-1.jpg","unnamed6-2.jpg","unname6-3.jpg");
+            var num = -1;
+ 
+            slideshow_timer();
+ 
+            function slideshow_timer(){
+                if (num == 2){
+                    num = 0;
+                } 
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+                setTimeout("slideshow_timer()",2000); 
+            }
+            </script>
+    </div>
+    
+    <div id="container">
+        <div id="sidemenw">
+<div class="left">
+    <p class="midasi2">Category</p>
+            <div id="hr"></div>
+            <ul>
+                <li><a href="yo-n4.html">ピアス・イヤリング</a></li>
+                <li><a href="yo-n4.html">ネックレス</a></li>
+                <li><a href="yo-n4.html">リング</a></li>
+                <li><a href="yo-n4.html">ブローチ</a></li>
+            </ul>
+        </div>
+            
+            <div class="left">
+                <p class="midasi2">プレゼントにおすすめ！</p>
+            <div id="hr"></div>
+            <ul>
+                <li><a href="#">18Kシルバー・ゴールド</a></li>
+                <li><a href="#">誕生石を使ったアクセ</a></li>
+                <li><a href="#">おまかせいろどり３点SET</a></li>
+                <li><a href="#">ラッピングについて</a></li>
+                
+            </ul>
+        </div>
+        </div>
+        <div class="left"><p class="midasi1">New Arrivals</p>
+
+            <div id="hr"></div>
+            <table class="item">
+                <tr>
+                    <td><a href="piace1buyingpage.html"><img src="unnamed1.png" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="piace2buyingpage.html"><img src="unnamed2.jpg" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="piace3buyingpage.html"><img src="unnamed3.png" alt="" width="210px" height="157px"></a></td>
+                </tr>
+                <tr>
+                    <td>テラコッタピアスorイヤリング<br>¥2,500（税抜）</td>
+                    <td>フィッシュボーンピアス<br>¥3,000（税抜）</td>
+                    <td>5点セット<br>さんかくモチーフピアス<br>¥2,500（税抜）</td>
+                </tr>
+                <tr>
+                    <td><a href="piace1buyingpage.html"><img src="mintgreen.png" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="#"><img src="unnamed4.jpg" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="#"><img src="unnamed5.jpg" alt="" width="210px" height="157px"></a></td>
+                </tr>
+                <tr>
+                    <td>みどりのピアス<br>¥2,500（税抜）</td>
+                    <td>なみボーダー＊<br>クリアピアスorイヤリング<br>¥3,000（税抜）</td>
+                    <td>たくさんの花びら＊<br>ピアスorイヤリング<br>¥2,500（税抜）</td>
+                </tr>
+                <tr>
+                    <td><a href="piace1buyingpage.html"><img src="unnamed6-1.png" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="#"><img src="unnamed8-1.jpg" alt="" width="210px" height="157px"></a></td>
+                    <td><a href="#"><img src="pistachio.png" alt="" width="210px" height="157px"></a></td>
+                </tr>
+                <tr>
+                    <td>なみなみピアス<br>¥3,500（税抜）</td>
+                    <td>レトロ柄＊<br>ピアスorイヤリング<br>¥2,500（税抜）</td>
+                    <td>ピスタチオ＊<br>クリアピアスorイヤリング<br>¥2,500（税抜）</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
