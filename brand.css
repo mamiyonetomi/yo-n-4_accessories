@@ -60,14 +60,14 @@ font-weight: 800;
 #loopslider {
     margin: 0 auto;
     width: 900px;
-    height: 195px;
+    height: 160px;
     text-align: left;
     position: relative;
     overflow: hidden;
 }
  
 #loopslider ul {
-    height: 195px;
+    height: 160px;
     float: left;
     display: inline;
     overflow: hidden;
@@ -75,7 +75,7 @@ font-weight: 800;
  
 #loopslider ul li {
     width: 210px;
-    height: 157px;
+    height: 160px;
     float: left;
     display: inline;
     overflow: hidden;
