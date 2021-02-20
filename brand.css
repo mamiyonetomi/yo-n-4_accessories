@@ -56,3 +56,43 @@ font-weight: 800;
     padding-top: 30px;
     padding-left: 0px;
 }
+
+#loopslider {
+    margin: 0 auto;
+    width: 900px;
+    height: 195px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+ 
+#loopslider ul {
+    height: 195px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+ 
+#loopslider ul li {
+    width: 210px;
+    height: 157px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+ 
+/* =======================================
+    ClearFixElements
+======================================= */
+#loopslider ul:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+ 
+#loopslider ul {
+    display: inline-block;
+    overflow: hidden;
+}
