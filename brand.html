@@ -21,7 +21,59 @@
     <p class="consept">CONSEPT</p>
     <p class="midasi">“どこでもいつも自分らしく生きる。”</p>
     <p>アクセサリーを身に着けるだけで何でもない１日の気分をあげてくれる存在でありたい。という思いがこのブランドにあります。<br>何かが物足りないとふと思ったらyo-n’4accessoriesのアイテムを身につけましょう。幸せな時間をすごせますように。</p>
-    <img src="girls.jpg" alt="" width="280px" height="200px">
+    <div id="loopslider">
+<ul>
+<li><a href="#"><img src="unnamed1.png" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed2.jpg" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed3.png" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="mintgreen.png" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed4.jpg" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed5.jpg" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed6-1.png" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="unnamed8-1.jpg" width="210px" height="157px" alt=""></a></li>
+<li><a href="#"><img src="pistachio.png" width="210px" height="157px" alt=""></a></li>
+</ul>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#loopslider').each(function(){
+        var loopsliderWidth = $(this).width();
+        var loopsliderHeight = $(this).height();
+        $(this).children('ul').wrapAll('<div id="loopslider_wrap"></div>');
+ 
+        var listWidth = $('#loopslider_wrap').children('ul').children('li').width();
+        var listCount = $('#loopslider_wrap').children('ul').children('li').length;
+ 
+        var loopWidth = (listWidth)*(listCount);
+ 
+        $('#loopslider_wrap').css({
+            top: '0',
+            left: '0',
+            width: ((loopWidth) * 2),
+            height: (loopsliderHeight),
+            overflow: 'hidden',
+            position: 'absolute'
+        });
+ 
+        $('#loopslider_wrap ul').css({
+            width: (loopWidth)
+        });
+        loopsliderPosition();
+ 
+        function loopsliderPosition(){
+            $('#loopslider_wrap').css({left:'0'});
+            $('#loopslider_wrap').stop().animate({left:'-' + (loopWidth) + 'px'},25000,'linear');
+            setTimeout(function(){
+                loopsliderPosition();
+            },25000);
+        };
+ 
+        $('#loopslider_wrap ul').clone().appendTo('#loopslider_wrap');
+    });
+});
+</script>
+
+</div><!--/#loopslider-->
     </div>
 
 
