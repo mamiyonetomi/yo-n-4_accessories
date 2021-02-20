@@ -1,12 +1,11 @@
-    @charset "utf-8";
+@charset "utf-8";
 body {
     margin: 0;
     padding: 0;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     color: #333;
-    font-size: 13px;
+    font-size: 20px;
 }
-
 
 #hometag{
     text-align: center;
@@ -19,74 +18,8 @@ body {
     text-align: right;
     padding-right: 35px;
     
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
-
-#nav1 {
-    width: 100%;
-    text-align: center;
-}
-
-#nav1 ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#nav1 ul li {
-    width: 100%;
-    text-align: center;
-}
-
-#nav1 ul li a {
-    width: 100%;
-    display: block;
-    height: 20px;
-    margin: 0px;
-    padding: 10px;
-    color: gray;
-    font-size: 15px;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-#nav1 ul li+li {
-    border-left: 1px gray solid;
-}
-
-
-/* -------------------- picup -------------------- */
-
-#picup{
-padding-top: 40px;
-text-align: center;
-}
-
-/* -------------------- mainpicture -------------------- */
-
-#mainpicture {
-    text-align: center;
-    padding-top: 30px;
-}
-
-#mainpicture .right {
-    text-align: right;
-    padding-right: 10px;
-}
-
-#mainpicture .left {
-    float: left;
-}
-
-#mainpicture1 .right {
-    padding-right: 10px;
-}
-
-#mainpicture1 .right a {
-    float: right;
-}
-
 
 /* -------------------- boder -------------------- */
 
@@ -96,20 +29,8 @@ text-align: center;
     border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.8" r="1"/></svg>') 0 2 100% 1 repeat;
 }
 
-
-/* -------------------- newitem -------------------- */
-
-#newitem {
-    width: 100%;
-    text-align: center;
-    font-family: "Ink Free";
-    font-weight: 600;
-    font-size:18px;
-}
-
-#newitem .left {
-    float: left;
-    padding-top: 10px;
+#item{
+    padding-top: 60px;
 }
 
 
@@ -119,27 +40,24 @@ text-align: center;
     width: 100%;
     margin: auto;
     padding: auto;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     clear: both;
     display: grid;
     grid-template-columns: 25vw 75vw;
 }
 
-.item {
-    text-align: left;
-}
-
-.item tr td {
+.picture {
+    width: 100%;
+    padding-bottom: 30px;
     text-align: center;
 }
-
 
 /* -------------------- sidemenw -------------------- */
 
 #sidemenw {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 #sidemenw ul li {
@@ -155,7 +73,7 @@ text-align: center;
     margin: 0px;
     padding: 10px;
     color: gray;
-    font-size: 13px;
+    font-size: 18px;
     text-decoration: none;
     background-color: #fff;
 }
@@ -171,8 +89,9 @@ text-align: center;
 .midasi1{
     font-family: "Ink Free";
     font-weight: 900;
-    font-size: 30px;
-    margin: 5px;
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
 }
 
 .midasi2{
@@ -180,4 +99,38 @@ text-align: center;
     font-weight: 900;
     font-size: 18px;
     margin: 5px;
+}
+
+#sidemenw2 {
+    width: 100%;
+    padding-top: 0px;
+}
+
+#container1 {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear: both;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+}
+
+#bunmen{
+    float: left;
+    padding-top: 50px;
+}
+
+#center {
+  text-align: center;
+　margin:0px;
+}
+
+.sentaku{
+    font-weight: 800;
+}
+
+#button{
+    padding-top: 80px;
 }
