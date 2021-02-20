@@ -1,0 +1,53 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #333;
+    font-size: 20px;
+}
+
+#hometag{
+    text-align: center;
+}
+
+/* -------------------- nav -------------------- */
+
+#nav {
+    text-decoration: none;
+    text-align: right;
+    padding-right: 35px;
+    
+    padding-bottom: 20px;
+}
+
+/* -------------------- boder -------------------- */
+
+#hr {
+    border-width: 0 0 8px 100;
+    border-style: solid;
+    border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4"><circle fill="hsla(0, 0%, 65%, 1.0)" cx="1" cy="0.8" r="1"/></svg>') 0 2 100% 1 repeat;
+}
+
+#daimei{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.consept{
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #F0FFFF;/*背景色*/
+  border-left: solid 5px #00CED1;/*左線（実線 太さ 色）*/
+  font-family: "Ink Free";
+  font-weight: 900;
+}
+
+.midasi{
+font-weight: 800;    
+}
+
+#honbun{
+    padding-top: 30px;
+    padding-left: 0px;
+}
